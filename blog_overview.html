@@ -79,6 +79,39 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-3">
                         <div class="image-wrapper">
+                            <img src="assets/images/model0915.png" alt="Mobirise">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <div class="card-box">
+                            <div class="row">
+                                <div class="col-md">
+                                    <h6 class="card-title mbr-fonts-style display-9"><strong>Rough Reading "Query Rewriting for Retrieval-Augmented Large Language Models"</strong></h6>
+                                    <p class="mbr-text mbr-fonts-style display-10">
+                                        This paper proposed a rewrite-retrieve-read pipeline to improve the performance of LLM. 
+                                        Different from existing methods of adapting the retriever or simulating the reader, this paper proposed to rewrite the query with a small language model. 
+                                        Specifically, they first prompt the LLM to generate some pseudo data to train the warm-up rewriter. Then the PPO is used to optimize the rewriter. 
+                                        The experiments seem to be incomplete, but this paper provides a novel idea and perspective for retrieval-augmented LLMs. 
+                                        The PPO should be further figured out. 
+                                    </p>
+                                </div>
+                                <div class="col-md-auto">
+                                    <p class="price mbr-fonts-style display-7">2023.09.15</p>
+                                    <div class="mbr-section-btn"><a href="http://arxiv.org/abs/2305.14283" class="btn btn-white display-4">Learn more</a></div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-3">
+                        <div class="image-wrapper">
                             <img src="assets/images/model0914.png" alt="Mobirise">
                         </div>
                     </div>
@@ -88,10 +121,10 @@
                                 <div class="col-md">
                                     <h6 class="card-title mbr-fonts-style display-9"><strong>Rough Reading "Enhancing Retrieval-Augmented Large Language Models with Iterative Retrieval-Generation Synergy"</strong></h6>
                                     <p class="mbr-text mbr-fonts-style display-10">
-                                        Existing retrieval-augmented LLMs adopt one-time retrieval, which (1) fials to process all the knowledge as a whole during the generation process; (2) and invoke retrieval multiple times and may frequently change the prompts by updating newly retrieved knowledge. 
-                                        This paper proposed a iterative retrieval-generation synergy, which alternates between a retrieval-augmented generation process and a generation-augmented retrieval process. 
-                                        A knowledge distillation from re-ranker is used to help the retriever better address the semantic gaps between a question and its supporting knowledge.
-                                        Experiments are conducted on four QA datasets. A ACC* metric also be adopted to evaluate the model in a more robust way. 
+                                        Existing retrieval-augmented LLMs adopt one-time retrieval, which (1) fails to process all the knowledge as a whole during the generation process; (2) invokes retrieval multiple times and may frequently change the prompts by updating newly retrieved knowledge. 
+                                        This paper proposed an iterative retrieval-generation synergy, which alternates between a retrieval-augmented generation process and a generation-augmented retrieval process. 
+                                        A knowledge distillation from a re-ranker is used to help the retriever better address the semantic gaps between a question and its supporting knowledge.
+                                        Experiments are conducted on four QA datasets. An ACC* metric also be adopted to evaluate the model in a more robust way. 
                                         This paradigm is similar to the idea in our paper "<a href="https://www.google.com/url?client=internal-element-cse&cx=000299513257099441687:fkkgoogvtaw&q=https://aclanthology.org/2021.findings-emnlp.115&sa=U&ved=2ahUKEwjto-76ltf-AhVql1YBHWMIB88QFnoECAkQAQ&usg=AOvVaw08pLIh9StQCjd_YHKPGgGJ">self Question-answering ...</a>".
                                     </p>
                                 </div>
@@ -121,9 +154,9 @@
                                 <div class="col-md">
                                     <h6 class="card-title mbr-fonts-style display-9"><strong>Rough Reading "In-Context Demonstration Selection with Cross Entropy Difference"</strong></h6>
                                     <p class="mbr-text mbr-fonts-style display-10">
-                                        This paper proposed to select in-context demonstrations based on cross entropy difference, which is based on the idea of meta-gradient. 
-                                        This paper also provides theoretical guidance for why selecting demonstrations based on their gradient alignment with test example is an effective heuristic.
-                                        This paper seems to be an unfinished paper, but it provides a good idea and new perspective of demonstrations selection. 
+                                        This paper proposed to select in-context demonstrations based on cross-entropy difference, which is based on the idea of meta-gradient. 
+                                        This paper also provides theoretical guidance for why selecting demonstrations based on their gradient alignment with test examples is an effective heuristic.
+                                        This paper seems to be an unfinished paper, but it provides a good idea and a new perspective on demonstration selection.
                                     </p>
                                 </div>
                                 <div class="col-md-auto">
