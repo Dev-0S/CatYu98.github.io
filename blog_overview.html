@@ -79,6 +79,38 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-3">
                         <div class="image-wrapper">
+                            <img src="assets/images/model1025.png" alt="Mobirise">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <div class="card-box">
+                            <div class="row">
+                                <div class="col-md">
+                                    <h6 class="card-title mbr-fonts-style display-9"><strong>Paper reading "Large Language Model Is Not a Good Few-shot Information Extractor, but a Good Reranker for Hard Samples!" -- ICLR2023</strong></h6>
+                                    <p class="mbr-text mbr-fonts-style display-10">
+                                        (1) Motivation: this paper investigates the effectiveness of small pre-trained language models (SLMs) and large language models (LLMs) on few-shot information extraction and found that LLM could resolve hard examples better. 
+                                        (2) Methods: this paper have several conclusions. First, LLMs outperform SLMs only when the overall number of annotations is limited. Second, when we increase the number of samples (e.g., a few hundreds), SLMs outperform LLMs by a large margin. Third, calling LLMs API suffers from much higher inference latency and financial cost than finetuning SLMs locally. Last, LLMs are good at hard samples, though bad at easy samples. 
+                                        This paper proposed a novel adaptive filter-then-rerank framework to combine SLMs and LLMs considering both performance and cost in practice. The basic idea is that SLMs serve as a filter and LLMs as a reranker. In specific, SLMs make the first round of prediction, and if the sample is a hard one, this paper further passed the top-N candidate labels with highest prediction scores by SLMs to LLMs for reranking.
+                                        (3) Experiments: With only 0.5%-13.2% of the samples being reranked, the adaptive filter-then-rerank system surpasses the previous state-of-the-art methods by an average 2.1% F1-score gain.
+                                    </p>
+                                </div>
+                                <div class="col-md-auto">
+                                    <p class="price mbr-fonts-style display-7">2023.10.25</p>
+                                    <div class="mbr-section-btn"><a href="http://arxiv.org/abs/2303.08559" class="btn btn-white display-4">Learn more</a></div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-3">
+                        <div class="image-wrapper">
                             <img src="assets/images/model1018.png" alt="Mobirise">
                         </div>
                     </div>
