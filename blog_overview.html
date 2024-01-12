@@ -82,6 +82,41 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-3">
                         <div class="image-wrapper">
+                            <img src="assets/images/model0106.png" alt="Mobirise">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <div class="card-box">
+                            <div class="row">
+                                <div class="col-md">
+                                    <h6 class="card-title mbr-fonts-style display-9"><strong>Paper reading "Knowledge Rumination for Pre-trained Language Models" -- ACL2023</strong></h6>
+                                    <p class="mbr-text mbr-fonts-style display-10">
+                                    <!-- This paper observe that PLMs have encoded rich knowledge for some knowledge intensive tasks but fail to exploit them. 
+                                    To this end, a method namely knowledge rumination is proposed to help PLMs utilize the latent knowledge without retrieving them from a external store. 
+                                    Specifically, they first freeze the PLMs and design multiple level prompts to get embeddings that encodes task-related information. 
+                                    Then the embeddings are inserted into the top-1 layer of the trainable PLMs by incorperating it in FFNs because the FFNs have been discovered as the knowledge neuron or skill neuron.
+                                    Extensive experiments on CommonsenseQA (CSQA), SocialIQA, PhysicalQA (PIQA), Openbook QA (OBQA), HellaSwag and Abductive Natural Language Inference (aNLI) proved the effectiveness of the proposed method.  -->
+                                    This paper observes that pre-trained language models (PLMs) encode rich knowledge for certain knowledge-intensive tasks but struggle to effectively utilize this encoded information. In response, a method called knowledge rumination is proposed to aid PLMs in leveraging latent knowledge without the need for retrieval from an external store.
+                                    Specifically, the approach involves freezing the PLMs and designing multiple-level prompts to obtain embeddings that encode task-related information. These embeddings are then incorporated into the top-1 layer of the trainable PLMs by integrating them into Feedforward Neural Networks (FFNs), as FFNs have been identified as the knowledge or skill neurons.
+                                    Extensive experiments conducted on CommonsenseQA (CSQA), SocialIQA, PhysicalQA (PIQA), Openbook QA (OBQA), HellaSwag, and Abductive Natural Language Inference (aNLI) demonstrate the effectiveness of the proposed method.
+                                    </p>
+                                </div>
+                                <div class="col-md-auto">
+                                    <p class="price mbr-fonts-style display-7">2023.01.06</p>
+                                    <div class="mbr-section-btn"><a href="https://aclanthology.org/2023.emnlp-main.206.pdf" class="btn btn-white display-4">Learn more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-3">
+                        <div class="image-wrapper">
                             <img src="assets/images/model0111.png" alt="Mobirise">
                         </div>
                     </div>
@@ -91,9 +126,13 @@
                                 <div class="col-md">
                                     <h6 class="card-title mbr-fonts-style display-9"><strong>Paper reading "Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models Fine-Tuned with Human Feedback" -- EMNLP2023 shot paper</strong></h6>
                                     <p class="mbr-text mbr-fonts-style display-10">
-                                    Existing widely used LMs are fine-tuned with reinforcement leanring from human feedback (RLHF LMs) and some studies have proved that RLHF LMs produce conditional probabilities that are very poorly calibrated. 
-                                    This paper conducted extensive experiments to evaluate methods for extracting confidence scores from RLHF-LMs. They find that verbalized confidence emitted as output tokens are tupically better-calibrated that the model's conditional probability. 
-                                    </p>
+                                    <!-- Existing widely used LMs are fine-tuned with reinforcement leanring from human feedback (RLHF LMs) and some studies have proved that RLHF LMs produce conditional probabilities that are very poorly calibrated. 
+                                    Some findings suggest that RLHF-LMs may sacrifice well-calibrated predictions for the sake of closer adherence to user instructions in dialogue (Kadavath et al., 2022; OpenAI, 2023), as the reinforcement learning objective encourages the model to allocate probability mass to the most preferred answer(s), rather than matching the relative frequency of possible answers.
+                                    This paper conducted extensive experiments to evaluate methods for extracting confidence scores from RLHF-LMs. They find that verbalized confidence emitted as output tokens are tupically better-calibrated that the model's conditional probability.  -->
+                                    Existing widely used language models (LMs) are fine-tuned using reinforcement learning from human feedback (RLHF LMs), and some studies have demonstrated that RLHF LMs generate poorly calibrated conditional probabilities.
+                                    Certain findings suggest that RLHF-LMs may prioritize adherence to user instructions in dialogue over well-calibrated predictions (Kadavath et al., 2022; OpenAI, 2023). This is because the reinforcement learning objective encourages the model to assign probability mass to the most preferred answer(s) rather than aligning with the relative frequency of possible answers.
+                                    This paper conducts extensive experiments to assess methods for extracting confidence scores from RLHF-LMs. The results indicate that verbalized confidence emitted as output tokens is typically better calibrated than the model's conditional probability.
+                                </p>
                                 </div>
                                 <div class="col-md-auto">
                                     <p class="price mbr-fonts-style display-7">2023.01.11</p>
@@ -120,14 +159,17 @@
                                 <div class="col-md">
                                     <h6 class="card-title mbr-fonts-style display-9"><strong>Paper reading "Data Curation Alone Can Stabilize In-context Learning" -- ACL2023</strong></h6>
                                     <p class="mbr-text mbr-fonts-style display-10">
-                                    This paper show that carefully curating a smaller training dataset from a larger pool can make ICL much more stable and define a training subset to be stable if randomly sampling a sequence of examples from the subset yields much higher average and worst-case accuracy than randomly sampling from the original sets. 
+                                    <!-- This paper show that carefully curating a smaller training dataset from a larger pool can make ICL much more stable and define a training subset to be stable if randomly sampling a sequence of examples from the subset yields much higher average and worst-case accuracy than randomly sampling from the original sets. 
                                     The paper proposed two methods to score all the training examples and select the training examples with highest scores to form the final stable subset. 
                                     The CondACC method calculate the expected accuracy conditioned on an example as its score, which is similar to Data Shapely value. 
                                     The Datamodel method trained a datamodel (a linear regressor) to predict the outcome of a training example from an LLM's. 
                                     The examples with outcome>0 are considered a good example. 
                                     Experimental results on 5 calssification tasks proved the effectiveness. 
                                     They analyze the proposed methods on different dimentions: sequence length, perplexity, and diversity. 
-                                    The comprehensive analysis is meaningful. 
+                                    The comprehensive analysis is meaningful.  -->
+                                    This paper demonstrates that meticulous curation of a smaller training dataset from a larger pool can significantly enhance the stability of Incremental Classifier Learning (ICL). A training subset is defined as stable if randomly sampling a sequence of examples from it results in significantly higher average and worst-case accuracy compared to random sampling from the original sets.
+                                    The paper introduces two methods to score all training examples and select those with the highest scores to compose the final stable subset. The CondACC method calculates the expected accuracy conditioned on an example's score, akin to the Data Shapley value. The Datamodel method involves training a data model (a linear regressor) to predict the outcome of a training example from an LLM's outcome. Examples with outcomes greater than 0 are considered good examples.
+                                    Experimental results on five classification tasks validate the effectiveness of the proposed methods. The study conducts a comprehensive analysis on various dimensions, including sequence length, perplexity, and diversity, rendering the insights gained from the analysis meaningful.
                                     </p>
                                 </div>
                                 <div class="col-md-auto">
@@ -158,6 +200,8 @@
                                        This paper is more likely to be an idea instead of a paper. This paper proposed an In-context Sampling (ICS) method, which first samples some demonstration candidates and then constructs different conbinations of demonstrations. 
                                        The proposed method aims to select representative demonstrations and maximize the diversity. 
                                        The statement "Dmonstrations could provide LLM with ..." could be referred in wiriting. 
+                                       <!-- ChatGPT: This work presents a conceptual idea rather than a fully developed paper. The proposed concept introduces an In-context Sampling (ICS) method, which involves the initial sampling of demonstration candidates followed by the construction of various combinations of demonstrations.
+                                        The primary objective of the proposed method is to carefully select representative demonstrations while simultaneously maximizing diversity. Reference to the statement "Demonstrations could provide LLM with..." can be incorporated for further clarity in the writing. -->
                                     </p>
                                 </div>
                                 <div class="col-md-auto">
